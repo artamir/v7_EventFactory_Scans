@@ -1,0 +1,4 @@
+[submodule "EventFactory"]
+	path = EventFactory
+	url = https://github.com/artamir/v7_EventFactory.git
+	branch = main
