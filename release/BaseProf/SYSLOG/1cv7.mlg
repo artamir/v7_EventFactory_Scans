@@ -174,3 +174,5 @@
 20201223;00:30:11;;E;Sys;OpenSession;0;Компьютер TOC-ПК(m);;
 20201223;00:31:07;;E;Sys;CloseSession;0;;;
 20201223;00:31:13;;C;Sys;CloseSession;0;;;
+20201229;11:10:56;;C;Sys;OpenSession;0;НОВЫЙ СЕАНС : Компьютер TOC-ПК(m);;
+20201229;11:11:26;;C;Sys;CloseSession;0;;;
