@@ -60,7 +60,7 @@ F=APPCODE   |Application code    |N   |3     |0
 F=DATE      |date                |D   |8     |0        
 F=TIME      |Time                |C   |6     |0        
 F=DNPREFIX  |Prefix Document No  |C   |18    |0        
-F=DOCNO     |Document No         |C   |1     |0        
+F=DOCNO     |Document No         |C   |10    |0        
 F=CLOSED    |Flag Document is Clo|N   |1     |0        
 F=ISMARK    |Flag Document is Mar|C   |1     |0        
 F=ACTCNT    |Action counter      |C   |6     |0        
@@ -97,7 +97,7 @@ T=1SDNLOCK|Номеров документов            |A          |1SDNLOCK   |1
 #-----Fields-------
 # Name      |Descr               |Type|Length|Precision
 F=DNPREFIX  |Prefix object       |C   |28    |0        
-F=DOCNO     |Object No           |C   |1     |0        
+F=DOCNO     |Object No           |C   |10    |0        
 #----Indexes------
 # Name     |Descr         |Unique|Indexed fields                                              |DBName     
 I=DOCNO    |Prefix+No     |0     |DNPREFIX,DOCNO                                              |DOCNO      
@@ -127,3 +127,47 @@ F=BLOCK     |Block               |C   |80    |0
 #----Indexes------
 # Name     |Descr         |Unique|Indexed fields                                              |DBName     
 I=MAIN     |              |0     |FIELDID,OBJID,BLOCKNO                                       |MAIN       
+#
+#===============================================================================
+#==TABLE no 8      : Справочник Контрагенты
+# Name    |Descr                         |Type[A/S/U]|DBTableName|ReUsable  
+T=SC27    |Справочник Контрагенты        |A          |SC27       |1         
+#-----Fields-------
+# Name      |Descr               |Type|Length|Precision
+F=ID        |ID object           |C   |9     |0        
+F=CODE      |object code         |C   |5     |0        
+F=DESCR     |object description  |C   |25    |0        
+F=ISMARK    |Flag Object is Marke|C   |1     |0        
+F=VERSTAMP  |Version stamp       |C   |6     |0        
+#----Indexes------
+# Name     |Descr         |Unique|Indexed fields                                              |DBName     
+I=IDD      |of ID         |0     |ID                                                          |IDD        
+I=CODE     |of CODE       |0     |CODE(UPPER)                                                 |CODE       
+I=DESCR    |of DESCR      |0     |DESCR(UPPER)                                                |DESCR      
+#
+#===============================================================================
+#==TABLE no 9      : Документ __СканыДоков__
+# Name    |Descr                         |Type[A/S/U]|DBTableName|ReUsable  
+T=DH24    |Документ __СканыДоков__       |A          |DH24       |1         
+#-----Fields-------
+# Name      |Descr               |Type|Length|Precision
+F=IDDOC     |ID Document's       |C   |9     |0        
+F=SP19      |(P)Док              |C   |13    |0        
+F=SP20      |(P)Спр              |C   |13    |0        
+#----Indexes------
+# Name     |Descr         |Unique|Indexed fields                                              |DBName     
+I=ID       |of IDDOC      |0     |IDDOC                                                       |ID         
+#
+#===============================================================================
+#==TABLE no 10     : Документ (Мн.ч.) __СканыДоков__
+# Name    |Descr                         |Type[A/S/U]|DBTableName|ReUsable  
+T=DT24    |Документ (Мн.ч.) __СканыДоков_|A          |DT24       |1         
+#-----Fields-------
+# Name      |Descr               |Type|Length|Precision
+F=IDDOC     |ID Document's       |C   |9     |0        
+F=LINENO    |LineNo              |N   |4     |0        
+F=SP21      |(P)Имя              |C   |50    |0        
+F=SP22      |(P)Путь             |C   |300   |0        
+#----Indexes------
+# Name     |Descr         |Unique|Indexed fields                                              |DBName     
+I=IDLINE   |of IDDOC+LineN|0     |IDDOC,LINENO                                                |IDLINE     
