@@ -383,3 +383,21 @@
 20201230;15:02:56;;E;Docs;DocNotWrite;3;;O/29/0;ПоступлениеТоваров 1 30.12.2020
 20201230;15:02:59;;C;Sys;CloseSession;0;;;
 20201230;15:03:00;;E;Sys;CloseSession;0;;;
+20201230;16:20:51;;C;Sys;OpenSession;0;НОВЫЙ СЕАНС : Компьютер TOC-ПК(m);;
+20201230;16:34:50;;C;Restruct;RestructSaveMD;3;;;
+20201230;16:35:04;;C;Restruct;RestructSaveMD;3;;;
+20201230;16:35:18;;C;Restruct;RestructSaveMD;3;;;
+20201230;16:35:38;;C;Restruct;RestructSaveMD;3;;;
+20201230;16:36:57;;C;Restruct;RestructSaveMD;3;;;
+20201230;17:16:15;;E;Sys;OpenSession;0;Компьютер TOC-ПК(m);;
+20201230;17:18:09;;E;Sys;CloseSession;0;;;
+20201230;17:18:10;;C;Restruct;RestructSaveMD;3;;;
+20201230;17:18:11;;E;Sys;OpenSession;0;Компьютер TOC-ПК(m);;
+20201230;17:19:29;;E;Refs;RefWrite;2;;B/27/1;Контрагенты     1
+20201230;17:20:04;;E;Refs;RefWrite;2;;B/27/1;Контрагенты     1 контр1
+20201230;17:21:44;;E;Sys;CloseSession;0;;;
+20201230;17:21:45;;C;Restruct;RestructSaveMD;3;;;
+20201230;17:21:47;;E;Sys;OpenSession;0;Компьютер TOC-ПК(m);;
+20201230;17:22:26;;E;Refs;RefWrite;2;;B/27/1;Контрагенты     1 контр1
+20201230;17:23:04;;E;Sys;CloseSession;0;;;
+20201230;17:23:09;;C;Sys;CloseSession;0;;;
