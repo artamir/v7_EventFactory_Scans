@@ -403,3 +403,14 @@
 20201230;17:23:09;;C;Sys;CloseSession;0;;;
 20201230;17:35:42;;C;Sys;OpenSession;0;НОВЫЙ СЕАНС : Компьютер TOC-ПК(m);;
 20201231;12:49:31;;C;Sys;CloseSession;0;;;
+20201231;12:52:52;;C;Sys;OpenSession;0;НОВЫЙ СЕАНС : Компьютер TOC-ПК(m);;
+20201231;12:55:17;;C;Restruct;RestructStart;1;;;
+20201231;12:55:17;;C;Restruct;RestructStatus;3;Анализ изменений в структуре информации.;;
+20201231;12:55:17;;C;Restruct;RestructStatus;3;Изменения в метаданных не вызвали изменений данных.;;
+20201231;12:55:18;;C;Restruct;RestructCopy;1;;;
+20201231;12:55:18;;C;Restruct;RestructAcptEnd;1;;;
+20201231;12:55:33;;E;Sys;OpenSession;0;Компьютер TOC-ПК(m);;
+20201231;13:04:46;;E;Sys;CloseSession;0;;;
+20201231;13:04:50;;C;Sys;CloseSession;0;;;
+20201231;13:42:28;;C;Sys;OpenSession;0;НОВЫЙ СЕАНС : Компьютер TOC-ПК(m);;
+20201231;13:42:56;;C;Sys;CloseSession;0;;;
